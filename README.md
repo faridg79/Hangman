@@ -15,8 +15,9 @@ This is a simple Hangman game where you have to guess a word. You need to guess 
    ```bash
    cd Hangman
 
-1.Run the game:
+1. Run the game:
 
+   ```bash
    python game.py
 
 # How to Play
@@ -31,7 +32,7 @@ This is a simple Hangman game where you have to guess a word. You need to guess 
    ```bash
    Guess a letter: a
 
-3.If the letter is in the word and you guessed it correctly, the letter will be revealed in the corresponding blank space:
+3. If the letter is in the word and you guessed it correctly, the letter will be revealed in the corresponding blank space:
 
     ```bash
     _ a _ _
