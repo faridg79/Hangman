@@ -1,38 +1,35 @@
 # Hangman
 
-این یک بازی حدس کلمه ساده است که در آن شما باید یک کلمه را حدس بزنید. شما باید حروف را یکی یکی حدس بزنید تا کلمه را کشف کنید. شما تنها 5 فرصت دارید و هر بار که حرف اشتباهی حدس بزنید، یک فرصت را از دست می‌دهید.
+# Word Guessing Game
+This is a simple word guessing game where you have to guess a word. You need to guess the letters one by one to uncover the word. You have only 5 chances, and each time you guess a wrong letter, you lose one chance.
 
-# نحوه اجرا
-ابتدا کد را از GitHub دریافت کنید.
-bash
-Copy code
-git clone https://github.com/your-username/word-guessing-game.git
-به دایرکتوری پروژه وارد شوید.
-bash
-Copy code
-cd word-guessing-game
-برنامه را اجرا کنید.
-bash
-Copy code
-python game.py
-# نحوه بازی
-با اجرای برنامه، بازی شروع می‌شود و یک خط خالی نمایش داده می‌شود که هر خط آن نمایانگر یک حرف از کلمه است. حروفی که هنوز حدس زده نشده‌اند، با خط تیره (_) نمایش داده می‌شوند.
+# How to Run
+- First, clone the code from GitHub.
+<pre> git clone https://github.com/your-username/word-guessing-game.git </pre>
+- Navigate to the project directory.
+<pre>cd word-guessing-game</pre>
+- Run the program.
+<pre>python game.py</pre>
+# How to Play
+By running the program, the game starts, and a blank line is displayed, where each line represents a letter of the word. The letters that have not been guessed yet are shown with underscores (_).
 Copy code
 _ _ _ _
-شما باید حرفی را که فکر می‌کنید در کلمه وجود دارد، حدس بزنید و آن را وارد کنید.
+You need to guess a letter that you think exists in the word and enter it.
 less
 Copy code
 Guess a letter: a
-اگر حرف در کلمه وجود داشت و شما آن را به درستی حدس زده باشید، حرف در خط خالی نمایش داده می‌شود.
+If the letter is in the word and you guessed it correctly, the letter is shown in the blank line.
 css
 Copy code
 _ a _ _
-اگر حرف در کلمه وجود داشت ولی شما قبلاً آن را حدس زده بودید، پیام "You've already guessed that letter!" نمایش داده می‌شود.
+If the letter is in the word but you have already guessed it before, the message "You've already guessed that letter!" is displayed.
 
-اگر حرف در کلمه وجود نداشت، پیام "Wrong guess! chances left: X" نمایش داده می‌شود و یک فرصت شما کم می‌شود.
+If the letter is not in the word, the message "Wrong guess! Chances left: X" is displayed, and one of your chances is deducted.
 
-بازی تا زمانی ادامه می‌یابد که شما تمامی حروف کلمه را حدس بزنید یا تمامی فرصت‌های شما به پایان برسد.
+The game continues until you guess all the letters of the word correctly or you run out of chances.
 
-اگر شما تمامی حروف کلمه را به درستی حدس بزنید، پیام "Good job! You guessed the word: [کلمه]" نمایش داده می‌شود و بازی به پایان می‌رسد.
+If you correctly guess all the letters of the word, the message "Good job! You guessed the word: [word]" is displayed, and the game ends.
 
-اگر تمامی فرصت‌های شما به پایان برسد و شما هنوز کلمه را حدس نزده‌اید، پیام "Game over! The word was: [کلمه]" نمایش داده می‌شود و بازی به پایان می‌رسد.
+If you run out of chances and you haven't guessed the word yet, the message "Game over! The word was: [word]" is displayed, and the game ends.
+
+You can customize this README according to your needs and add more descriptions to it.
