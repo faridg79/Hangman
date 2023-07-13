@@ -17,7 +17,6 @@ This is a simple Hangman game where you have to guess a word. You need to guess 
 
 1.Run the game:
 
-   ```bash
    python game.py
 
 # How to Play
