@@ -17,10 +17,10 @@ This is a simple Hangman game where you have to guess a word. You need to guess 
 
 1.Run the game:
 
-   ```bash
-   python game.py
+    ```bash
+    python game.py
 
-#How to Play
+# How to Play
 
 1. The game will start, and a blank line will be displayed, representing the hidden word. Each letter of the word is initially shown as an underscore (_).
 
